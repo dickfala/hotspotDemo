@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SCDynamicStore.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"device name:%@",[[UIDevice currentDevice] name]);
+    
+    SCDynamicStoreRef sc = SCDynamicStoreCreate(NULL, CFSTR("com.apple.wirelessmodemsettings.MISManager"), NULL, NULL);
+    NSDictionary* info = (__bridge_transfer NSDictionary*)SCDynamicStoreCreate(sc, CFSTR("com.apple.MobileInternetSharing"));
+    CFRelease(sc);
+    
 }
 
 - (void)didReceiveMemoryWarning {

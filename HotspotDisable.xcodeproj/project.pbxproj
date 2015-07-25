@@ -40,6 +40,8 @@
 		6F23F8C41B611DDC00F88F7B /* HotspotDisableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotspotDisableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F23F8C91B611DDC00F88F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F23F8CA1B611DDC00F88F7B /* HotspotDisableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotspotDisableTests.m; sourceTree = "<group>"; };
+		6F23F8D41B61205500F88F7B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6F65B3C21B6240AF0089B798 /* SCDynamicStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCDynamicStore.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		6F23F8A21B611DDB00F88F7B = {
 			isa = PBXGroup;
 			children = (
+				6F23F8D41B61205500F88F7B /* SystemConfiguration.framework */,
 				6F23F8AD1B611DDB00F88F7B /* HotspotDisable */,
 				6F23F8C71B611DDC00F88F7B /* HotspotDisableTests */,
 				6F23F8AC1B611DDB00F88F7B /* Products */,
@@ -89,6 +92,7 @@
 				6F23F8BB1B611DDB00F88F7B /* Images.xcassets */,
 				6F23F8BD1B611DDB00F88F7B /* LaunchScreen.xib */,
 				6F23F8AE1B611DDB00F88F7B /* Supporting Files */,
+				6F65B3C21B6240AF0089B798 /* SCDynamicStore.h */,
 			);
 			path = HotspotDisable;
 			sourceTree = "<group>";
@@ -418,6 +422,7 @@
 				6F23F8D01B611DDC00F88F7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F23F8D11B611DDC00F88F7B /* Build configuration list for PBXNativeTarget "HotspotDisableTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +431,7 @@
 				6F23F8D31B611DDC00F88F7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
